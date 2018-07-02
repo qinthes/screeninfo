@@ -14,8 +14,8 @@ class Monitor(object):
         self.height = height
 
     def __repr__(self):
-        return 'monitor({}x{}+{}+{})'.format(
-            self.width, self.height, self.x, self.y)
+        list_dimension = [self.width, self.height]
+        return list_dimension
 
 
 def _enumerate_windows():
