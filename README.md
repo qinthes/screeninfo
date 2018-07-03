@@ -36,8 +36,7 @@ for m in get_monitors():
 
 **Output**:
 
->monitor(1920x1080+1920+0)  
->monitor(1920x1080+0+0)
+>['1920','1080']
 
 ### Forcing environment
 
