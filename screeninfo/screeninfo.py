@@ -14,8 +14,7 @@ class Monitor(object):
         self.height = height
 
     def __repr__(self):
-        list_dimension = [self.width, self.height]
-        return list_dimension
+        return str(self.width)+"-"+str(self.height)
 
 
 def _enumerate_windows():
@@ -412,4 +411,4 @@ def get_monitors(name=None):
 
 if __name__ == '__main__':
     for m in get_monitors():
-        print(str(m))
+        print(str(m).split("-"))
