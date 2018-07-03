@@ -31,7 +31,7 @@ python3 setup.py install
 ```python
 from screeninfo import get_monitors
 for m in get_monitors():
-    print(str(m))
+    print(str(m).split("-"))
 ```
 
 **Output**:
@@ -48,7 +48,7 @@ like this:
 ```python
 from screeninfo import get_monitors
 for m in get_monitors('osx'):
-    print(str(m))
+    print(str(m).split("-"))
 ```
 
 Available drivers: `windows`, `cygwin`, `x11`, `osx`.
